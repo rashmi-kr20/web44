@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .dashboard {
+            padding: 20px;
+        }
+        .card {
+            margin: 20px 0;
+        }
+        .traffic-chart {
+            height: 300px;
+        }
+        .social-buttons .btn {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid dashboard">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">26K</h6>
+                        <p class="card-text">-1.24% <span class="text-success">&#9650;</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Income</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">$6,200</h6>
+                        <p class="card-text">40.9% <span class="text-success">&#9650;</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Conversion Rate</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2.49%</h6>
+                        <p class="card-text">84.7% <span class="text-success">&#9650;</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sessions</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">44K</h6>
+                        <p class="card-text">-23.8% <span class="text-danger">&#9660;</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Traffic</h5>
+                        <canvas id="trafficChart" class="traffic-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 text-center social-buttons">
+                <button class="btn btn-primary">Facebook</button>
+                <button class="btn btn-info">Twitter</button>
+                <button class="btn btn-success">LinkedIn</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('trafficChart').getContext('2d');
+        var trafficChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Visits',
+                    data: [40, 30, 50, 60, 70, 50, 60],
+                    borderColor: 'rgba(0, 123, 255, 1)',
+                    fill: false
+                }, {
+                    label: 'Unique Users',
+                    data: [20, 25, 30, 35, 40, 30, 35],
+                    borderColor: 'rgba(40, 167, 69, 1)',
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            }
+        });
+    </script>
+</body>
+</html>

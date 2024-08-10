@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header{
+            display: flex;
+            text-decoration: none;
+            margin-left: 10%;
+            align-content: space-around;
+            padding: 5px 0;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        nav a {
+            color: rgb(157, 233, 238);
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            
+            border-radius: 5px;
+        }
+        .logo{
+            flex: 1;
+        }
+        .head{
+            flex: 2;
+            background-color: rgb(14, 138, 175);
+            color:white;
+        }
+        .home1{
+            display: flex;
+            gap: 15%;
+        }
+        .home-right{
+           align-items: center;
+           flex: 2;
+           margin-bottom: 40px;
+            padding: 20px;
+            margin-top: 15%;
+            align-items: center;
+        }
+        .home-left{
+            flex: 1;
+        }
+        .hom2{
+            display: flex;
+            width: 100%;
+            height: 10%;
+            margin: 10%;
+        }
+        .icon{
+            display: flex;
+            text-decoration: none;
+            margin-left: 10%;
+            align-content: space-around;
+            padding: 10px 10px;
+            padding-left: 20px;
+            padding-left: 0px;
+            text-align: center;
+              
+        }
+        .micon{
+            display: flex;
+            border: 0.1px solid white;
+            background-color: aqua  ;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .HEAD{
+            align-items: center;
+            margin: 40%;
+        }
+        .treatment-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .treatment {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .treatment img {
+            max-width: 50px;
+            margin-bottom: 10px;
+        }
+        .treatment h3 {
+            margin: 10px 0;
+            color: #4a9aab;
+        }
+        .treatment p {
+            color: #777;
+        }
+        .appointment-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-left: 10%;
+        }
+
+        .appointment-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .appointment-form input[type="text"],
+        .appointment-form input[type="email"],
+        .appointment-form input[type="date"],
+        .appointment-form input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .appointment-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00bfff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .appointment-form button:hover {
+            background-color: #0099cc;
+        }
+        .appointment{
+            display: flex;
+            align-content: space-around;
+            gap: 15%;
+        }
+        .team-member{
+            display: flex;
+            align-content: space-between;
+            gap: 5%;
+            margin-left: 3%;
+        }
+            .blogs-section {
+                max-width: 1200px;
+                margin: auto;
+            }
+    
+            .blogs-header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+    
+            .blogs-header h2 {
+                font-size: 36px;
+                margin: 0;
+            }
+    
+            .blogs-header p {
+                color: #777;
+                font-size: 18px;
+            }
+    
+            .blog-posts {
+                display: flex;
+                gap: 20px;
+            }
+    
+            .blog-card {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                width: 30%;
+                display: flex;
+                display: block;
+                
+            }
+            
+    
+            .blog-image img {
+                width: 400px;
+                height: auto;
+                display: flex;
+                flex: 2;
+            }
+    
+            .blog-content {
+                padding: 20px;
+            }
+    
+            .blog-content h3 {
+                font-size: 22px;
+                margin: 0 0 10px;
+            }
+    
+            .blog-meta {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: #777;
+                margin-bottom: 10px;
+            }
+    
+            .blog-meta span {
+                margin-right: 10px;
+            }
+    
+            .blog-description {
+                font-size: 16px;
+                color: #555;
+            }
+            .blog-container{
+                display: flex !important;
+                width: 100%;
+                align-content: space-between;
+                gap: 20%;
+                margin-left: 10%;
+                width: 1200px;
+                
+                
+            }
+    
+            .read-more {
+                margin-top: auto;
+                padding: 15px 20px;
+                border-top: 1px solid #eee;
+                text-align: right;
+            }
+    
+            .read-more a {
+                color: #00bfff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            .read-more a:hover {
+                text-decoration: underline;
+            }      
+            .FOOTER{
+                display: flex;
+                background-color: black;
+                color: white;
+                flex: 3;
+            }
+            .END{
+                background-color: #555;
+                color: white;
+                display: flex;
+            }     
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src=" https://www.yudaah.com/demo/dil-hospital/assets/images/logo.jpg" width="150px" alt="logo">
+        </div>
+        
+      <div class="head">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+      </div>  
+    
+    
+ </header>
+ <section class="home1">
+    <div class="home-left">
+        <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/slider/slide-02-image-01.png" alt="image">
+
+    </div>
+    <div class="home-right">
+        <h1 style="color: aqua;">SWEET TREATMENT FOR ALL YOUR PAIN</h1>
+        <h3 style="color: aqua;">WE PROVIDE BEST HOMOCARE FOR YOU</H3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum <br>nulla odit esse maxime natus dignissimos provident atque veniam similique, repellendus labore,<br> quas fugit obcaecati suscipit ipsum. Est, amet quis.
+            </P>
+    </div>
+
+ </section>
+
+ <section>
+    <div class="head" >
+        <nav style="border: 1PX SOLID WHITE;">
+            <a href="#"><h3><i class="fa-sharp fa-solid fa-user-doctor"></i>Care about you health </h3></a>
+            <a href="#" style="background-color: rgba(20, 151, 145, 0.034);"><h3><i class="fa-sharp fa-solid fa-user-doctor"></i>Care about you health </h3></a>
+            <a href="#"><h3><i class="fa-regular fa-syringe"></i>Care about you health </h3></a>
+            <a href="#"><h3><i class="fa-sharp fa-solid fa-stethoscope"></i>Care about you health </h3></a>
+        </nav>
+    </div> 
+    <div class="treatment-container">
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_1.png" alt="Thyroid Treatment">
+            <h3>Thyroid Treatment</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_2.png" alt="Diabetes Treatment">
+            <h3>Diabetes Treatment</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_3.png" alt="Treatment for Arthritis">
+            <h3>Treatment for Arthritis</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_4.png" alt="Treatment for Asthma">
+            <h3>Treatment for Asthma</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_5.png" alt="Treatment for Asthma">
+            <h3>Treatment for Asthma</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_6.png" alt="Treatment for Asthma">
+            <h3>Treatment for Asthma</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_7.png" alt="Treatment for Asthma">
+            <h3>Treatment for Asthma</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+        <div class="treatment">
+            <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/treatments/treatment_8.png" alt="Treatment for Asthma">
+            <h3>Treatment for Asthma</h3>
+            <p>Lorem Ipsum, type lorem then press the shortcut. The default keyboard shortcut is the same for all supported platforms.</p>
+        </div>
+    </div> 
+ </section>
+ <section class="appointment">
+    <div class="appointment-form">
+        <h2>Appointment</h2>
+        <p>Book an Appointment now we are here for you</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Your Phone" required>
+            <input type="email" placeholder="Your Mail" required>
+            <input type="date" placeholder="Date" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="State" required>
+            <button type="submit">Book an Appointment</button>
+        </form>
+    </div>
+    <div class="appointment-IMAGE">
+        <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/woman-doctor.png" width="400PX" height="400PX" alt="image">
+
+    </div>
+   
+ </section>
+ <section class="TEAM">
+    <DIV class="TEAM-HEAD">
+        <CENTER>
+            <H1>Our Team</H1>
+            <P>Meet our expert team of Docters</P>
+        </CENTER>
+        <div class="team-member">
+            <div class="team1">
+                <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/team/team_member_01.jpg">
+                <h3>Docter Name</h3>
+                <p>Specialist</p>
+            </div>
+            <div class="team1">
+                <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/team/team_member_02.jpg">
+                <h3>Docter Name</h3>
+                <p>Specialist</p>
+            </div>
+            <div class="team1">
+                <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/team/team_member_03.jpg">
+                <h3>Docter Name</h3>
+                <p>Specialist</p>
+            </div>
+            <div class="team1">
+                <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/team/team_member_04.jpg">
+                <h3>Docter Name</h3>
+                <p>Specialist</p>
+            </div>
+
+    </DIV>
+ </section>
+ <section>
+    <div class="blogs-section">
+        <div class="blogs-header">
+            <center>
+                <h2>Latest Blogs</h2>
+                <p>Take a look at some of our latest Blogs</p>
+            </center>
+           
+        </div>
+        
+           <div class="blog-container" style="display:flex" align-item:space-between; margin-left:10%; >
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/blog/blog_01.jpg" width="300px" alt="Blog Image 2">
+                </div>
+                <div class="blog-content">
+                    <h3>Why Primary treatment is important?</h3>
+                    <div class="blog-meta">
+                        <span>👤 Admin</span>
+                        <span>👁️ 12</span>
+                        <span>💬 12</span>
+                    </div>
+                    <div class="blog-description">
+                        Lorem Ipsum, type lorem then press the shortcut. <br>
+                        The default keyboard shortcut is the 
+                        <br>same keyboard shortcut is the...
+                    </div>
+                </div>
+                <div class="read-more">
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+    
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://www.yudaah.com/demo/dil-hospital/assets/images/blog/blog_02.jpg" width="300px" alt="Blog Image 3">
+                </div>
+                <div class="blog-content">
+                    <h3>Why Primary treatment is important?</h3>
+                    <div class="blog-meta">
+                        <span>👤 Admin</span>
+                        <span>👁️ 12</span>
+                        <span>💬 12</span>
+                    </div>
+                    <div class="blog-description">
+                        Lorem Ipsum, type lorem then press the
+                        <br> shortcut. The default keyboard shortcut is 
+                        <br>the same keyboard shortcut is the...
+                    </div>
+                </div>
+                <div class="read-more">
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+ </section>
+ <section>    
+        <footer class="END">
+            <DIV class="FOOTER" style="display: flex; gap:3%;margin: left 4%;">
+                <DIV class="ABOUT">
+                    <h1>ABOUT US</h1>
+                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti magnam 
+                    <BR>soluta? Iusto explicabo architecto id similique itaque doloremque, praesentium 
+                        <BR>perferendis voluptatibus quaerat, unde quas! Unde praesentium corrupti
+                            <BR> perspiciatis deserunt!</P>
+                </DIV>
+                <DIV class="LINKS">
+                    <H1>Quick Links</H1>
+                    <UL>
+                        <LI>HOME</LI>
+                        <LI>ABOUT US</LI>
+                        <LI> Portfolio</LI>
+                        <LI>BLOG</LI>
+                        <LI>CONTACT US</LI>
+                    </UL>
+                </DIV>
+                <DIV class="ADDRESS">
+                    <H1>Contact Address</H1>
+                    <P>Nagan Comunications<BR>
+                        Phone : +91 9443682111<BR>
+                        Email : nagantv111@gmail.com<BR>
+                        Web : www.schengensolutions.com</P><BR>
+    
+                </DIV>
+                
+            </footer>
+                   
+     
+
+            </DIV>
+ </section>
+</body>
+</html>

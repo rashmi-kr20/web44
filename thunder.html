@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thunder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        header{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            gap: 10%;
+            padding-left: 10%;
+        }
+        
+        
+        nav ul{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .section-right{
+            color: white;
+            flex: 2;
+            margin-top: 10%;
+            gap: 5%;
+            font-size: xx-large;
+            padding-left: 10%;
+        }
+        .section-left{
+            flex: 2;
+            background: url(https://img.freepik.com/premium-vector/halftone-dotted-circle-white-background_132079-1072.jpg?w=740);
+            background: no-repeat;
+            margin-top:none;
+            border-radius: 10px 10px 50px 50px;
+        }
+        .section-blank{
+            color: wheat;
+            flex: 1;
+            margin-top: 2%;
+            gap: 5%;
+            align-content: space-between;
+            
+        }
+        .section1{
+            display: flex;
+        }
+        .blank{
+            padding: 10%;
+            align-content: space-around;
+        }
+        .section1-btn{
+            background-color: greenyellow;
+            padding: 2%;
+            border-radius: 40px 40px 40px 40px;
+            width: 45%;
+            height: 25%;
+            text-transform:none;
+            font-size: medium;
+        }
+        .btn{
+            display: flex;
+            align-content: space-around;
+            gap: 5%;
+        }
+        .ICON{
+            display: flex;
+            align-content: space-between;
+            gap: 3%;
+        }
+        .box{
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            background-color: black;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            width: 25%;
+            height: 25%;
+            color: silver; 
+        }
+        .box h1{
+            font-size: 8rem;
+            margin: 0;
+            color: #f0f0f0;
+        }
+        .box p{
+            font-size: 1.5 rem;
+            margin: 10px 0 0 0;
+            color: #b0b0b0;
+
+        }
+        .section2{
+            display: flex;
+            gap: 3%;
+            align-content: space-between;
+            margin-top: 10%;
+            padding-left: 10%;
+            
+        }  
+        .IMAGE{
+            display: flex;
+            align-content: space-between;
+            gap: 8%;
+            padding-top: 8%;
+            padding-left: 20%;
+        }  
+        SECTION3{
+            color: white;
+            font-size: xx-large;
+            padding-top: 15%;
+            padding-left: 25%;
+            text-align: center;
+        } 
+        .SECTION3 h1{
+            color: white;
+            font-size: 4.5rem;
+            text-align: center;
+            padding-bottom: 7%;
+        }  
+        .container {
+            max-width:1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            padding: 20px 0;
+            width: 100%;
+        }
+        .service-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            flex: 0 0 50px;
+        }
+        .service-title {
+            flex: 1;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .service-details {
+            font-size: 1.1em;
+            color: #aaa;
+            flex: 1;
+        }
+        .view-details {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .view-details:hover {
+            text-decoration: underline;
+        } 
+        .service-item{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            width: 150%;
+            height: 20%;
+            border-radius: 50px 50px 50px 50px;
+            margin-bottom: 3%;
+            margin-left: 1%;
+            color: white;
+           
+            align-content: space-between;
+           
+                
+        }
+        
+        .service-item img{
+            align-content: space-around;
+            padding-left: 3%;
+        }
+        .section5{
+            color: white;
+           margin-left: 4%;
+            font-size: 3rem;
+        }
+        .sub-image6{
+            color: white;
+            width: 400px;
+            height: 300px;
+            margin-bottom: 5%;
+            padding-bottom: 5%;
+            padding-left: 20%;
+           
+            
+        }
+        .section6-btn{
+            padding: 10px;
+            color: wheat;
+            border-radius: 100%;
+        }
+        .section6{
+            display: flex;
+            gap: 10%;
+            margin-bottom: 10%;
+            display: flex;
+            flex: 2;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        } 
+        .section8{
+            padding-left: 15%;
+            padding-top: 5%;
+            padding-bottom: 10%;
+        }
+        .container8 {
+            text-align: center;
+            max-width: 600px;
+            margin-top: 20%;
+            padding-top: 10%;
+            padding-left: 15%;
+            padding-bottom: 5%;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+            text-align: center;
+            padding-right: 10%;
+        }
+
+        h1 {
+            
+            padding-top: 10%;
+            padding-left: 10%;
+            font-size: 1.5em;
+            margin: 0 0 20px 0;
+            
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #ccc;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1em;
+            color: white;
+            background-color: #00d464;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #00a852;
+        }
+        .foot2{
+            display: inline;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="HEAD" >
+            <div class="LOGO">
+                <h2><img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/66576e08088312a517c09346_Thunder%20Brand.svg" alt="LOGO"> </h2>
+            </div>
+        </div>
+        <div class="head-menu">
+            <div class="MENU">
+                <nav>
+                    <ul TYPE="none">
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>PROJECT</li>
+                        <LI>BLOG</LI>
+                    </ul>
+                </nav>
+            </div>
+        </div>        
+    </header>
+
+    <section class="section1">
+        <div class="section-right"> 
+            <H1>Build Proffesional 
+            <BR>webflow websites <br>
+                for startups.</H1>
+                
+                <p><spam style="font-size: medium; font-style:italic"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> Minima repellat, deleniti rem iusto maxime facilis quidem <br></spam>
+                </p>
+                <div class="btn">
+                    <button class="section1-btn">
+                        <h4 style="background-color: greenyellow; color:black;">Purchase Template</h4>
+                    </button>
+                    <p style="font-size: x-large;"> Enquire Me <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b58ab2421abb42b276eb6_button%20link%20icon.svg " alt="image"></p>
+                </div>
+
+                <div class="ICON">
+                    <p>Follow Us  --</p>
+                    <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fad822f338b473b8626_facebook%20icon.svg" alt="IMAGE">
+                    <img src=" https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fae822f338b473b864c_instagram%20icon.svg" alt="INSTA">
+                    <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fafd9bd3bea8b6ac725_twitter%20icon.svg " alt="twitter">
+                </div>
+                
+        </div>
+        <div class="section-left">
+            
+            <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/65944a0ea13efc453b4847c2_hero%20image-p-500.webp" width="300px" height="800px" alt="image">
+
+        </div>
+        <div class="section-blank">
+            <div class="blank" >
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/665aa3d2db6233857856b728_Nav%20Link%20Icon.svg" alt="image">
+               <img src=" https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/665aa3d261a0966483b890a2_Nav%20Mail%20Icon.svg" alt="image2">
+            </div>
+            
+
+        </div>
+        
+    </section>
+    <section>
+        <div class="section2">
+            <div class="box">
+                <h2>140+</h2>
+                <p>Project Done</p></button>
+            </div>
+            <div class="box">
+                <h2>13+</h2>
+                <p>Years Experience</p></button>
+            </div>
+            <div class="box">
+                <h2>36N</h2>
+                <p>Total Funding</p></button>
+            </div>
+        </div>
+        
+    </section>
+    <section>
+        <DIV class="IMAGE">
+            <DIV class="LOGO-SENT">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5faeef3a4ebf1518fa00_client%20icon.svg">
+            </DIV>
+            <DIV class="LOGO-SENT">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fad86303d8f3a4b8705_client%20icon%202.svg">
+            </DIV>
+            <DIV class="LOGO-SENT">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fad6771ee2f2ae6d949_client%20icon%203.svg">
+            </DIV>
+            <DIV class="LOGO-SENT">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fadb2ff3949991e3361_client%20icon%204.svg">
+            </DIV>
+
+        </DIV>
+    </section>
+
+    <section>
+        <DIV class="SECTION">
+            <H1>Design that solves problems,<BR>
+                 one product at a time.</H1>
+            
+        </DIV>
+    </section>
+    <section class="section" style="display: flex";>
+        <div class="container">
+            <div class="service-item">
+                <div class="service-number">01/04</div>
+                <div class="service-title">UI/UX Design</div>
+                <div class="service-details">Web Design  </div>
+                <div class="service-details">Mobile Apps Design </div>
+                <a href="#" class="view-details">View Details</a>
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5faef1b468de2aab67e0_product%20icon.svg ">
+            </div>
+            <div class="service-item">
+                <div class="service-number">02/04</div>
+                <div class="service-title">Webflow Developing</div>
+                <div class="service-details">SaaS Page Developing</div>
+                <a href="#" class="view-details">View Details</a>
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5faef1b468de2aab67e0_product%20icon.svg ">
+            </div>
+            <div class="service-item">
+                <div class="service-number">03/04</div>
+                <div class="service-title">Digital Marketing</div>
+                <div class="service-details">Mobile Apps Design</div>
+                <a href="#" class="view-details">View Details</a>
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5faef1b468de2aab67e0_product%20icon.svg">
+            </div>
+            <div class="service-item">
+                <div class="service-number">04/04</div>
+                <div class="service-title">Mobile App</div>
+                <div class="service-details">UI/UX Design</div>
+                <a href="#" class="view-details">View Details</a>
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5faef1b468de2aab67e0_product%20icon.svg ">
+            </div>
+        </div>
+
+    </section>
+    <section class="section5">
+        <div class="section5">
+            <h1> I help move your business 
+                <br>forward with design.</h1>
+        </div>
+
+    </section>
+    <section class="section6">
+        <div class="image6" style="display: flex;">
+            <div class="sub-image6">
+                <img src=" https://cdn.prod.website-files.com/65901b82720c2702e492bb4f/665aa655466e55a53ace2c3b_Project%20Image-p-500.webp" width="400px" alt="image">
+                <br>
+                <div class="section6-btn">
+                <button style="color: #aaa;border-radius: 20px 20px 20px 20px; border: 2px solid gray;">Web Design</button>
+                <button style="color: #aaa;border-radius: 20px 20px 20px 20px; border: 2px solid gray;">UI/UX Design</button>
+                </div>
+                
+                <br>
+                <hr>
+                <h4> Saas page Design - Webflow 
+                    <br>Developmet</h4>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem 
+                        <br>harum beatae repellendus facilis, neque natus. Delectus, !</p>
+                        <h5>Learn More <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b58ab2421abb42b276eb6_button%20link%20icon.svg"></h5>
+            </div>
+
+            <div class="sub-image6">
+                <img src=" https://cdn.prod.website-files.com/65901b82720c2702e492bb4f/665aa655466e55a53ace2c3b_Project%20Image-p-500.webp" width="400px" alt="image">
+                <br>
+                <div class="section6-btn">
+                <button style="color: #aaa;border-radius: 20px 20px 20px 20px; border: 2px solid gray;">Web Design</button>
+                <button style="color: #aaa;border-radius: 20px 20px 20px 20px; border: 2px solid gray;">UI/UX Design</button>
+                </div>
+                
+                <br>
+                <hr>
+                <h4> Saas page Design - Webflow 
+                    <br>Developmet</h4>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem 
+                        <br>harum beatae repellendus facilis, neque natus. Delectus, !</p>
+                        <h5>Learn More <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b58ab2421abb42b276eb6_button%20link%20icon.svg"></h5>
+            </div>
+        </div>
+    </section>
+    <section class="section8">
+        <div class="container8">
+            <h1 style="color: white;">Have projects in mind? <br> Let's work together</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit enim urna porttitor neque elementum cursus.</p>
+            <a href="#" class="button">Purchase Template</a>
+        </div>
+    </section>
+    <footer>
+        <div class="HEAD" >
+            <div class="LOGO">
+                <h2><img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/66576e08088312a517c09346_Thunder%20Brand.svg" alt="LOGO"> </h2>
+            </div>
+            <p style="color: white;">Quis nostrud exercitation ullamco laboris
+                <br> ut aliquip ex ea commodo consequat.</p>
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fae822f338b473b864c_instagram%20icon.svg">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fafd9bd3bea8b6ac725_twitter%20icon.svg">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fad822f338b473b8626_facebook%20icon.svg">
+                <img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b5fae86303d8f3a4b8730_linedin%20icon.svg">
+        </div>
+        <div class="foot2">
+            <nav>
+                <ul type="none">
+                    <li><h5>MENU</h5></li>
+                    <li><h5>TEMPLATE</h5></li>
+                    <li><h5>Contact Us</h5></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="foot2">
+            <nav>
+                <ul type="none">
+                    <li><h5>Homepage</h5></li>
+                    <li><h5>Style Guide</h5></li>
+                    <li><h5><img src="https://cdn.prod.website-files.com/6589c1ed5d52e6e1acac741e/658b63a6ca1479f5b8bc57d8_mail%20icon.svg">
+                        thunder@gmail.com</h5></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+
+
+
+       
+    </footer>
+
+
+    
+    
+            
+    
+</body>
+</html>

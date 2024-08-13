@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>progress bar</h1>
+    </center>
+    <h1>default progress bar    </h1>
+    <progress></progress>
+
+    <h1>static progress</h1> 
+    <progress min="0" max="100" value ="0" id="download"></progress>
+    <p id="result"></p>
+
+
+    <script>
+        let progressbar=document.getElementById('download')
+        var result=document.getElementById('result')
+        var popup=document.getElementById('popup')
+
+        var progressvalue=0;
+
+        function downloadHandlee(){
+            if(progressvalue<100){
+                progressvalue++;
+                console.log(progressvalue)
+                progressbar.value=progressvalue;
+                result.innerHTML="downloading" + progressvalue +"%"
+                result.style.color="red"
+            
+            }else{
+                result.style.color="green"
+                popup.show()
+            }
+        }
+
+        setInterval('downloadHandlee()',50)
+    </script>
+</body>
+</html>

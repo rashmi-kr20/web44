@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            width: 40%;
+            padding-left: 30%;
+            
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header i{
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: rgb(90, 89, 89);
+        }
+       
+        .search-bar {
+            display: block;
+            margin: 20px auto;
+            width: 95%;
+            padding: 5px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            margin-top:5px;
+        }
+        .stories {
+            display: flex;
+            overflow-x: hidden;
+            padding: 5px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        }
+        .story {
+            text-align: center;
+            margin-right: 10px;
+        }
+        .story img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+        .messages {
+            background-color: #fff;
+            padding: 5px;
+            margin: 0 auto;
+            width: 100%;
+            overflow-y: scroll;
+            
+        }
+        .message {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+           
+        }
+        .message img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .message-info {
+            flex-grow: 1;
+        }
+        .message-info h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .message-info p {
+            margin: 5px 0;
+            color: #888;
+        }
+        .active-status {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 12px;
+            padding: 3px 6px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="second">
+        <div style="padding: 5px;">
+            <div class="header">
+                <h1>Messages</h1>
+                <div>
+                    <i class="fa-sharp-duotone fa-solid fa-pen-to-square"></i>
+                </div>
+            </div> 
+    </div>
+
+    
+    <input type="text" class="search-bar" placeholder="Search...">
+
+    <!-- Stories Section -->
+    <div class="stories">
+        <div class="story">
+            <label>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-43931_OdP5H4oY39DuukXVtvaK1X7elphg8hRkAK7znSOywkvCySH8B8cjFZglzx71s&usqp=CAU" alt="Story">
+                <p><small>+ add note</small></p>
+                
+               
+            </label>
+            
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFpDZhqlQkDH0HVLUCANSgbJdxRMYRkadig33I2uRK7v_iIirjkXkuM3UgjB_3KIuML4&usqp=CAU" alt="Story">
+            <p>Muskan</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEU9PG53unhtehVnKuV1pYnU2GMt_kZhlcS_rIU5mfnorHOPkLqn6JHiF6V2eK953vRs&usqp=CAU" alt="Story">
+            <p>SANGEET</p>
+        </div>
+        <div class="story">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3BxAUHqhvchUI390JMI0epILPzcIkxKQZ88H23-jGILSuzJgXjTvleOsd6hSmyHZjrPA&usqp=CAU" alt="Story">
+            <p>Akshu</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8guLnrcPQcm_y7OhUGwmj9EN2Thl4uDr1mLbOHBQTHUrtBe298UqcgojFhf35_fOfPE&usqp=CAU" alt="Story">
+            <p>impu</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7spTcnACCqt75gT8BHYarsFXzdvj-UJI23eg4PllQllhADtFIKgJcOJzu7_4vIEyHf5E&usqp=CAU" alt="Story">
+            <p>shree</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EU7LTJClLfc_kpk7GO_9lpb2Vky9mcKVeOOpxAGMtBqY7MDqcWo_Jkc9V1R_OuAfNWw&usqp=CAU" alt="Story">
+            <p>Ranjana</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZsfDAKPnO1nAqWdqyEzyRsWlPeLu_4vlfP84Ztro0ErK0xiHWh6n5PMkIBGIM0q5Zok&usqp=CAU" alt="Story">
+            <p>ammu</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EU7LTJClLfc_kpk7GO_9lpb2Vky9mcKVeOOpxAGMtBqY7MDqcWo_Jkc9V1R_OuAfNWw&usqp=CAU" alt="Story">
+            <p>Ranjana</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFpDZhqlQkDH0HVLUCANSgbJdxRMYRkadig33I2uRK7v_iIirjkXkuM3UgjB_3KIuML4&usqp=CAU" alt="Story">
+            <p>Muskan</p>
+        </div>
+        <div class="story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EU7LTJClLfc_kpk7GO_9lpb2Vky9mcKVeOOpxAGMtBqY7MDqcWo_Jkc9V1R_OuAfNWw&usqp=CAU" alt="Story">
+            <p>Ranjana</p>
+        </div>
+    </div>
+    <div style="padding: 5px;">
+        <div class="header">
+            <h5>Messages</h5>
+            <div>
+                <h5 style="color: blue;">Requests</h5>
+            </div>
+        </div> 
+</div>
+
+
+    <!-- Messages Section -->
+    <div class="messages">
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROh81DQ1BifPjLOv1UBwk6KeRSWESeqzfDv0_8kHOsyboCN4fKgzLsMfzb3YP6OvZFPDA&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>Akshu <span class="active-status">Active Now</span></h4>
+                <p>Sent a message 22 minutes ago</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwpVnscDkdDg2Q0WaliRRHpW34mEYbjfo3J80ZH8sGN5XQHAPd6BCnhzQ25jsX41bmoY&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>It's_me_impu</h4>
+                <p>Active 46 minutes ago</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUZKuGRRpvX6ESfo_cqV9fa1IClyK_T2fbKGasUjUcHy7tb23ivUwTwWyOE78VFJMV0E&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>deepz, It's_me_impu, chandini</h4>
+                <p>3 active today</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkLxzhnl4-Cksalhz6Y9I3oyVSp8dfxm4D7xt3sRLxtnWIUG9LdjIOCnpETsb3parEQE&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>Ranjithapunithranju</h4>
+                <p>Active Now</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3UMBX40qN_SnxfsgxzbDvmZNtptvUt3pZycMJZHiIgUdavuvWBQkgzwK8LlDGvrbi_c&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>Kiran ganga's</h4>
+                <p>Active 6 hours ago</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy3AHe_Hij-WIL7VfNQEU7tBvjTagJfWqpCS0JNuevL5vErmVOYYeSPvIRtrDjZHx3TKY&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>manvith_punith</h4>
+                <p>Active today</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_DALK_ra9Jz4p4H5S7gIAH-avIQZWjJHH55u9yOktHZDDKXZwvWE_8Wgb04-dEfcAOU&usqp=CAU" alt="Profile Picture">
+            <div class="message-info">
+                <h4>Pooja Prakash</h4>
+                <p>Active 25 minutes ago</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

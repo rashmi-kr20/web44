@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="firstgraphic" style="border:2px solid black; width:500px; height:500px;"></canvas>
+<script>
+    const canvas1=document.getElementById ('firstgraphic').getContext('2d');
+    
+    canvas1.moveTo(30,30);
+    canvas1.lineTo(130,30)
+    canvas1.lineTo(130,80)
+    canvas1.lineTo(30,80)
+    canvas1.lineTo(30,30)
+
+    canvas1.moveTo(60,60);
+    canvas1.lineTo(160,60)
+    canvas1.lineTo(160,110)
+    canvas1.lineTo(60,110)
+    canvas1.lineTo(60,60)
+
+    canvas1.moveTo(130,30)
+    canvas1.lineTo(160,60)
+
+    canvas1.moveTo(60,110)
+    canvas1.lineTo(30,80)
+    
+    canvas1.moveTo(30,30)
+    canvas1.lineTo(60,60)
+    
+    canvas1.moveTo(160,110)
+    canvas1.lineTo(130,80)
+
+    canvas1.stroke();
+    canvas.closePath();
+    
+</script>
+</body>
+</html>

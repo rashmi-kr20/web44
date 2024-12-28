@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center >
+        <h1>meter tag</h1>
+    </center>
+    <hr>
+    <h1>default meter tag</h1>
+    <meter> </meter>
+
+    <h1>static meter tag</h1>
+    <meter min="0" max="100" value="90" low="20" high="70"></meter>
+
+    <h1>dynamic meter tag</h1>
+    <meter min="0" max="100" value="00" low="20" high="70" id="voltage"></meter>
+    <p id="result"> </p>
+
+    <script>
+        let voltageMeter=document.getElementById('voltage');
+        let result=document=document.getElementById('result')
+        var meterValue=0;
+        function voltageMeter(){
+            if(meterValue<100){
+                meterValue++;
+                voltageMeter.value=meterValue;
+                if(meterValue<20){
+                    result.innerText="low voltage"
+                    result.style.color="yellow "
+                    else if(meterValue>20 && meterValue<75){
+                        result.innerText=" high voltage"
+                    result.style.color="green " 
+                    }
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
